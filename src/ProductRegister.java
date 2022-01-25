@@ -1,12 +1,13 @@
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Scanner;
 
 public class ProductRegister {
 
     public static void main(String[] args) {
 
-        Collection<Product> products = new ArrayList<>();
+        Collection<Product> products = new HashSet<>();
 
         System.out.println("=== Product Registration ===\n");
 

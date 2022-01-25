@@ -39,4 +39,9 @@ public class Product {
         Product other = (Product) obj;
         return this.sku.equals(other.getSku());
     }
+
+    @Override
+    public int hashCode() {
+        return this.sku.charAt(0);
+    }
 }
