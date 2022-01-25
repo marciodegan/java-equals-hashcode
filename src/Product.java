@@ -35,13 +35,15 @@ public class Product {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        Product other = (Product)obj;
-        return this.sku.equals(other.getSku());
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return sku.equals(product.sku);
     }
 
     @Override
     public int hashCode() {
-        return this.sku.charAt(0);
+        return Objects.hash(sku);
     }
 }
