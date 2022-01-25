@@ -36,7 +36,7 @@ public class Product {
 
     @Override
     public boolean equals(Object obj) {
-        Product other = (Product) obj;
+        Product other = (Product)obj;
         return this.sku.equals(other.getSku());
     }
 
