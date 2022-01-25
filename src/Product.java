@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Product {
 
     private String name;
@@ -30,5 +32,11 @@ public class Product {
                 "name='" + name + '\'' +
                 ", sku='" + sku + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        Product other = (Product) obj;
+        return this.sku.equals(other.getSku());
     }
 }
